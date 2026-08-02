@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<!-- HERO BANNER SVG -->
+<!-- HERO BANNER SVG WITH EMBEDDED REAL PHOTO -->
 <img src="./assets/hero.svg" alt="Altaf Khan Hero Banner" width="100%" />
 
 </div>
@@ -15,34 +15,44 @@
 
 <br/>
 
-<!-- RECRUITER SNAPSHOT GLASS CARD -->
-<table align="center" width="100%" style="border-collapse: collapse; border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 12px; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(10px);">
+<!-- RECRUITER SNAPSHOT GLASS CARD WITH REAL PHOTO -->
+<table align="center" width="100%" style="border-collapse: collapse; border: 1px solid rgba(0, 240, 255, 0.35); border-radius: 16px; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(16px); box-shadow: 0 12px 40px rgba(0,0,0,0.5);">
   <tr>
-    <td padding="20" style="padding: 24px;">
-      <h3 align="left" style="margin-top: 0; color: #00F0FF; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
+    <td padding="24" style="padding: 24px;">
+      <h3 align="left" style="margin-top: 0; color: #00F0FF; font-family: -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: 0.5px;">
         ⚡ RECRUITER SNAPSHOT &amp; QUICK OVERVIEW
       </h3>
       <table width="100%" style="border: none;">
         <tr>
-          <td width="50%" style="vertical-align: top; border: none; padding-right: 15px;">
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>🟢 Status:</strong> <span style="color: #10B981;">Open for Data Analyst &amp; ML Trainee Opportunities</span></p>
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>🎓 Current Role:</strong> Software Trainee @ <em>QSpiders Gurugram</em></p>
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>📍 Location:</strong> Gurugram / India (Open to Remote &amp; On-Site)</p>
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>💡 Primary Tech Stack:</strong> Python, SQL, Pandas, NumPy, Power BI, ML</p>
+          <!-- Photo Column -->
+          <td width="28%" style="vertical-align: top; border: none; padding-right: 20px;">
+            <div align="center">
+              <img src="./assets/altaf_khan.jpg" alt="Altaf Khan" width="170" style="border-radius: 14px; border: 2px solid #00F0FF; box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);" />
+              <p style="color: #F8FAFC; margin-top: 10px; font-weight: 700; font-size: 14px;">Altaf Khan</p>
+              <p style="color: #94A3B8; margin-top: -6px; font-size: 12px;">Gurugram, India</p>
+            </div>
           </td>
-          <td width="50%" style="vertical-align: top; border: none; padding-left: 15px;">
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>🎯 Current Focus:</strong> Advanced SQL, Model Deployment &amp; Feature Engineering</p>
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>🌐 Portfolio Website:</strong> <a href="https://ialtaf14.github.io" style="color: #00F0FF;">ialtaf14.github.io</a></p>
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>📧 Email:</strong> <a href="mailto:altafkhan122105@gmail.com" style="color: #38BDF8;">altafkhan122105@gmail.com</a></p>
-            <p style="color: #F8FAFC; margin: 6px 0;"><strong>💼 LinkedIn:</strong> <a href="https://linkedin.com/in/ialtaf14" style="color: #A855F7;">linkedin.com/in/ialtaf14</a></p>
+          <!-- Details Column 1 -->
+          <td width="36%" style="vertical-align: top; border: none; padding-right: 15px;">
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>🟢 Status:</strong> <span style="color: #10B981; font-weight: 700;">Open for Data Analyst &amp; ML Roles</span></p>
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>🎓 Current Role:</strong> Software Trainee @ <em>QSpiders Gurugram</em></p>
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>📍 Location:</strong> Gurugram, India (Remote &amp; On-Site)</p>
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>💡 Tech Stack:</strong> Python, SQL, Pandas, NumPy, Power BI, ML</p>
+          </td>
+          <!-- Details Column 2 -->
+          <td width="36%" style="vertical-align: top; border: none; padding-left: 15px;">
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>🎯 Current Focus:</strong> Advanced SQL, Model Deployment &amp; Feature Engineering</p>
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>🌐 Live Portfolio:</strong> <a href="https://ialtaf14.vercel.app" style="color: #00F0FF; font-weight: 700;">ialtaf14.vercel.app</a></p>
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>📧 Email:</strong> <a href="mailto:altafkhan122105@gmail.com" style="color: #38BDF8;">altafkhan122105@gmail.com</a></p>
+            <p style="color: #F8FAFC; margin: 8px 0; font-size: 13px;"><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/altaf-khan-7a544b256/" style="color: #A855F7;">linkedin.com/in/altaf-khan</a></p>
           </td>
         </tr>
       </table>
       <br/>
       <div align="center">
-        <a href="https://ialtaf14.github.io"><img src="https://img.shields.io/badge/🌐_Explore_Portfolio-00F0FF?style=for-the-badge&logoColor=black" alt="Portfolio"/></a>
+        <a href="https://ialtaf14.vercel.app"><img src="https://img.shields.io/badge/🌐_Explore_Live_Portfolio-00F0FF?style=for-the-badge&logoColor=black" alt="Portfolio"/></a>
         &nbsp;
-        <a href="https://linkedin.com/in/ialtaf14"><img src="https://img.shields.io/badge/💼_LinkedIn_Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+        <a href="https://www.linkedin.com/in/altaf-khan-7a544b256/"><img src="https://img.shields.io/badge/💼_LinkedIn_Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
         &nbsp;
         <a href="mailto:altafkhan122105@gmail.com"><img src="https://img.shields.io/badge/📧_Send_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
         &nbsp;
@@ -58,11 +68,11 @@
 <h2 align="left" style="color: #00F0FF;">👤 ABOUT ME</h2>
 
 <p align="left">
-I am a results-driven <strong>Data Analyst</strong> and <strong>Machine Learning Enthusiast</strong> passionate about translating raw, unstructured datasets into clear business intelligence and high-accuracy predictive models. With a strong engineering background in Computer Science and hands-on training in core programming, software testing, relational databases, and predictive modeling, I build reliable end-to-end data pipelines.
+I am a results-driven <strong>Data Analyst</strong> and <strong>Machine Learning Enthusiast</strong> passionate about translating raw, unstructured datasets into clear business intelligence and high-accuracy predictive models. With a Computer Science Engineering degree from Gurugram University and hands-on training in core programming, software testing, relational databases, and predictive modeling, I build end-to-end data pipelines.
 </p>
 
 <p align="left">
-My goal is to leverage data engineering, exploratory analysis, statistical modeling, and interactive visualization tools to help organizations make data-informed strategic decisions.
+My project work covers exploratory data analysis, data cleaning, feature engineering, model evaluation, and reporting. I focus on writing clean, modular code and delivering practical data-driven insights.
 </p>
 
 <br/>
@@ -79,29 +89,29 @@ My goal is to leverage data engineering, exploratory analysis, statistical model
 <table width="100%" style="border-collapse: collapse;">
   <tr>
     <td width="33%" style="vertical-align: top; padding: 10px;">
-      <div style="border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 10px; padding: 16px; background: rgba(15, 23, 42, 0.6);">
+      <div style="border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 12px; padding: 18px; background: rgba(15, 23, 42, 0.65);">
         <h4 style="color: #00F0FF; margin-top: 0;">💻 Programming &amp; Querying</h4>
-        <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> Core Analysis &amp; Scripting</p>
+        <p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> Data Manipulation &amp; Scripting</p>
         <p><img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> Complex Queries &amp; Aggregations</p>
-        <p><img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white"/> Programming Fundamentals</p>
+        <p><img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white"/> Core OOP &amp; Logic</p>
       </div>
     </td>
     <td width="33%" style="vertical-align: top; padding: 10px;">
-      <div style="border: 1px solid rgba(112, 0, 255, 0.3); border-radius: 10px; padding: 16px; background: rgba(15, 23, 42, 0.6);">
+      <div style="border: 1px solid rgba(112, 0, 255, 0.3); border-radius: 12px; padding: 18px; background: rgba(15, 23, 42, 0.65);">
         <h4 style="color: #A855F7; margin-top: 0;">📊 Data Science &amp; ML</h4>
-        <p><img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/> Data Structures &amp; Cleaning</p>
+        <p><img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/> Data Cleaning &amp; Reshaping</p>
         <p><img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/> Numerical Computations</p>
-        <p><img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/> Predictive Algorithms</p>
+        <p><img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/> ML Predictive Algorithms</p>
         <p><img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white"/> Statistical Visualization</p>
       </div>
     </td>
     <td width="33%" style="vertical-align: top; padding: 10px;">
-      <div style="border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 10px; padding: 16px; background: rgba(15, 23, 42, 0.6);">
+      <div style="border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px; background: rgba(15, 23, 42, 0.65);">
         <h4 style="color: #38BDF8; margin-top: 0;">📈 Business Tools &amp; Environment</h4>
         <p><img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black"/> Interactive Executive Dashboards</p>
-        <p><img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white"/> Pivot Tables, DAX &amp; VLOOKUP</p>
-        <p><img src="https://img.shields.io/badge/Git_%26_GitHub-F05032?style=flat-square&logo=git&logoColor=white"/> Version Control &amp; CI/CD</p>
-        <p><img src="https://img.shields.io/badge/VS_Code_%26_Jupyter-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/> IDE &amp; Notebooks</p>
+        <p><img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white"/> Pivot Tables &amp; VLOOKUP</p>
+        <p><img src="https://img.shields.io/badge/Git_%26_GitHub-F05032?style=flat-square&logo=git&logoColor=white"/> Version Control &amp; Repositories</p>
+        <p><img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/> REST APIs &amp; Deployment</p>
       </div>
     </td>
   </tr>
@@ -146,77 +156,99 @@ My goal is to leverage data engineering, exploratory analysis, statistical model
 
 <br/>
 
-<!-- FEATURED PROJECTS -->
+<!-- FEATURED PROJECTS (ORIGINAL REAL PROJECTS) -->
 <h2 align="left" style="color: #00F0FF;">💻 FEATURED PROJECTS</h2>
 
 <table width="100%" style="border-collapse: collapse;">
-  <!-- Project 1 -->
+  <!-- Project 1: Novaflix -->
   <tr>
-    <td style="padding: 16px; border: 1px solid rgba(0, 240, 255, 0.2); border-radius: 12px; background: rgba(15, 23, 42, 0.6);">
-      <h3 style="color: #00F0FF; margin-top: 0;">01. Automated Customer Churn Prediction Engine</h3>
+    <td style="padding: 20px; border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 14px; background: rgba(15, 23, 42, 0.7);">
+      <h3 style="color: #00F0FF; margin-top: 0;">01. Novaflix – AI-Powered Movie Recommendation Platform</h3>
       <p style="color: #94A3B8;">
-        Engineered a predictive machine learning classification pipeline to identify churn risks among customer segments. Performed extensive exploratory data analysis (EDA), feature scaling, and model evaluation using Scikit-Learn.
+        An AI recommendation platform featuring mood curation, real-time messaging between cinephiles, streaming availability badges, and interactive Movie DNA profiles. Uses Scikit-Learn cosine similarity for content-based metadata filtering.
       </p>
-      <p style="margin-bottom: 12px;">
-        <span style="background: rgba(0, 240, 255, 0.1); color: #00F0FF; border: 1px solid rgba(0, 240, 255, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Python</span>
+      <p style="margin-bottom: 14px;">
+        <span style="background: rgba(0, 240, 255, 0.12); color: #00F0FF; border: 1px solid rgba(0, 240, 255, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">React</span>
         &nbsp;
-        <span style="background: rgba(112, 0, 255, 0.1); color: #A855F7; border: 1px solid rgba(112, 0, 255, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Pandas</span>
+        <span style="background: rgba(112, 0, 255, 0.12); color: #A855F7; border: 1px solid rgba(112, 0, 255, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Vite</span>
         &nbsp;
-        <span style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Scikit-Learn</span>
+        <span style="background: rgba(56, 189, 248, 0.12); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">FastAPI</span>
         &nbsp;
-        <span style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Matplotlib</span>
+        <span style="background: rgba(236, 72, 153, 0.12); color: #EC4899; border: 1px solid rgba(236, 72, 153, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Scikit-Learn</span>
+        &nbsp;
+        <span style="background: rgba(16, 185, 129, 0.12); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Python</span>
       </p>
-      <a href="https://github.com/ialtaf14"><img src="https://img.shields.io/badge/View_Repository-181717?style=flat-square&logo=github&logoColor=white" alt="Repo"/></a>
+      <a href="https://github.com/ialtaf14/Novaflix"><img src="https://img.shields.io/badge/View_Repository-181717?style=flat-square&logo=github&logoColor=white" alt="Repo"/></a>
       &nbsp;
-      <a href="https://ialtaf14.github.io"><img src="https://img.shields.io/badge/Live_Demo-00F0FF?style=flat-square&logoColor=black" alt="Demo"/></a>
+      <a href="https://novaflix-bice.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-00F0FF?style=flat-square&logoColor=black" alt="Demo"/></a>
     </td>
   </tr>
 
-  <tr><td style="height: 15px; border: none;"></td></tr>
+  <tr><td style="height: 16px; border: none;"></td></tr>
 
-  <!-- Project 2 -->
+  <!-- Project 2: NovaRecon -->
   <tr>
-    <td style="padding: 16px; border: 1px solid rgba(112, 0, 255, 0.2); border-radius: 12px; background: rgba(15, 23, 42, 0.6);">
-      <h3 style="color: #A855F7; margin-top: 0;">02. Interactive E-Commerce Sales &amp; Analytics Dashboard</h3>
+    <td style="padding: 20px; border: 1px solid rgba(112, 0, 255, 0.3); border-radius: 14px; background: rgba(15, 23, 42, 0.7);">
+      <h3 style="color: #A855F7; margin-top: 0;">02. NovaRecon – OSINT &amp; Cyber Threat Intelligence Platform</h3>
       <p style="color: #94A3B8;">
-        Built an end-to-end executive Power BI dashboard analyzing sales transactions, profit margins, and customer demographic insights across multiple geographical regions. Utilized complex DAX formulas and SQL relational queries.
+        Next-generation threat intelligence tool built with Next.js 14, FastAPI, Tailwind CSS &amp; SQLite. Features live IP Geolocation mapping, 11-platform Social Footprint Scanner, Domain WHOIS/DNS analysis, breach exposure detection, and threat telemetry.
       </p>
-      <p style="margin-bottom: 12px;">
-        <span style="background: rgba(245, 158, 11, 0.1); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Power BI</span>
+      <p style="margin-bottom: 14px;">
+        <span style="background: rgba(0, 240, 255, 0.12); color: #00F0FF; border: 1px solid rgba(0, 240, 255, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Next.js 14</span>
         &nbsp;
-        <span style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">SQL</span>
+        <span style="background: rgba(56, 189, 248, 0.12); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">TypeScript</span>
         &nbsp;
-        <span style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Excel</span>
+        <span style="background: rgba(112, 0, 255, 0.12); color: #A855F7; border: 1px solid rgba(112, 0, 255, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">FastAPI</span>
         &nbsp;
-        <span style="background: rgba(0, 240, 255, 0.1); color: #00F0FF; border: 1px solid rgba(0, 240, 255, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">DAX Measures</span>
+        <span style="background: rgba(16, 185, 129, 0.12); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">SQLite</span>
       </p>
-      <a href="https://github.com/ialtaf14"><img src="https://img.shields.io/badge/View_Repository-181717?style=flat-square&logo=github&logoColor=white" alt="Repo"/></a>
+      <a href="https://github.com/ialtaf14/NovaRecon"><img src="https://img.shields.io/badge/View_Repository-181717?style=flat-square&logo=github&logoColor=white" alt="Repo"/></a>
       &nbsp;
-      <a href="https://ialtaf14.github.io"><img src="https://img.shields.io/badge/Live_Demo-00F0FF?style=flat-square&logoColor=black" alt="Demo"/></a>
+      <a href="https://novarecon-frontend.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-00F0FF?style=flat-square&logoColor=black" alt="Demo"/></a>
     </td>
   </tr>
 
-  <tr><td style="height: 15px; border: none;"></td></tr>
+  <tr><td style="height: 16px; border: none;"></td></tr>
 
-  <!-- Project 3 -->
+  <!-- Project 3: RealityML -->
   <tr>
-    <td style="padding: 16px; border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 12px; background: rgba(15, 23, 42, 0.6);">
-      <h3 style="color: #38BDF8; margin-top: 0;">03. Financial Data Insights &amp; Correlation Pipeline</h3>
+    <td style="padding: 20px; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 14px; background: rgba(15, 23, 42, 0.7);">
+      <h3 style="color: #38BDF8; margin-top: 0;">03. RealityML – AI Feasibility Suite &amp; Risk Assessor</h3>
       <p style="color: #94A3B8;">
-        Developed a Python data pipeline to clean, impute missing values, and calculate statistical correlation matrices across 100,000+ financial market records, uncovering hidden volatility patterns.
+        An AI feasibility suite featuring an iOS-inspired glassmorphic UI, synthetic dataset generator with 100+ feature support, automated data quality analysis, sample bias checking, and data leakage detection.
       </p>
-      <p style="margin-bottom: 12px;">
-        <span style="background: rgba(0, 240, 255, 0.1); color: #00F0FF; border: 1px solid rgba(0, 240, 255, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Python</span>
+      <p style="margin-bottom: 14px;">
+        <span style="background: rgba(0, 240, 255, 0.12); color: #00F0FF; border: 1px solid rgba(0, 240, 255, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Python</span>
         &nbsp;
-        <span style="background: rgba(112, 0, 255, 0.1); color: #A855F7; border: 1px solid rgba(112, 0, 255, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">NumPy</span>
+        <span style="background: rgba(112, 0, 255, 0.12); color: #A855F7; border: 1px solid rgba(112, 0, 255, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Pandas</span>
         &nbsp;
-        <span style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">Seaborn</span>
+        <span style="background: rgba(56, 189, 248, 0.12); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Scikit-Learn</span>
         &nbsp;
-        <span style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 8px; border-radius: 6px; font-size: 11px;">EDA</span>
+        <span style="background: rgba(16, 185, 129, 0.12); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Streamlit</span>
       </p>
-      <a href="https://github.com/ialtaf14"><img src="https://img.shields.io/badge/View_Repository-181717?style=flat-square&logo=github&logoColor=white" alt="Repo"/></a>
-      &nbsp;
-      <a href="https://ialtaf14.github.io"><img src="https://img.shields.io/badge/Live_Demo-00F0FF?style=flat-square&logoColor=black" alt="Demo"/></a>
+      <a href="https://github.com/ialtaf14/RealityML"><img src="https://img.shields.io/badge/View_Repository-181717?style=flat-square&logo=github&logoColor=white" alt="Repo"/></a>
+    </td>
+  </tr>
+
+  <tr><td style="height: 16px; border: none;"></td></tr>
+
+  <!-- Project 4: Nova-AI -->
+  <tr>
+    <td style="padding: 20px; border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 14px; background: rgba(15, 23, 42, 0.7);">
+      <h3 style="color: #FBBF24; margin-top: 0;">04. Nova AI – Smart AI Learning Assistant</h3>
+      <p style="color: #94A3B8;">
+        Smart AI assistant powered by the Google Gemini API, designed specifically to guide students and developers through complex concepts in AI, Machine Learning, Data Science, Python, and Software Engineering.
+      </p>
+      <p style="margin-bottom: 14px;">
+        <span style="background: rgba(0, 240, 255, 0.12); color: #00F0FF; border: 1px solid rgba(0, 240, 255, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Python</span>
+        &nbsp;
+        <span style="background: rgba(245, 158, 11, 0.12); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">Gemini API</span>
+        &nbsp;
+        <span style="background: rgba(56, 189, 248, 0.12); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">FastAPI</span>
+        &nbsp;
+        <span style="background: rgba(16, 185, 129, 0.12); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;">JSON</span>
+      </p>
+      <a href="https://github.com/ialtaf14/Nova-AI"><img src="https://img.shields.io/badge/View_Repository-181717?style=flat-square&logo=github&logoColor=white" alt="Repo"/></a>
     </td>
   </tr>
 </table>
@@ -232,17 +264,17 @@ My goal is to leverage data engineering, exploratory analysis, statistical model
 <!-- EXPERIENCE & INTERNSHIP -->
 <h2 align="left" style="color: #00F0FF;">💼 PROFESSIONAL EXPERIENCE &amp; TRAINING</h2>
 
-<table width="100%" style="border-collapse: collapse; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; background: rgba(15, 23, 42, 0.7);">
+<table width="100%" style="border-collapse: collapse; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 14px; background: rgba(15, 23, 42, 0.75);">
   <tr>
-    <td style="padding: 20px;">
+    <td style="padding: 24px;">
       <h3 style="color: #10B981; margin-top: 0;">🏢 Software Testing &amp; Programming Trainee</h3>
       <p style="color: #F8FAFC; margin: 4px 0;"><strong>Organization:</strong> QSpiders Gurugram</p>
       <p style="color: #94A3B8; margin: 4px 0;"><strong>Timeline:</strong> August 2025 – Present</p>
-      <p style="color: #E2E8F0; margin-top: 10px;">
+      <p style="color: #E2E8F0; margin-top: 12px; line-height: 1.6;">
         Focused on strengthening programming fundamentals, relational database query optimization (SQL), Java concepts, algorithmic problem solving, and software testing methodologies while constructing real-world software &amp; data development projects.
       </p>
-      <p style="margin-top: 12px;">
-        <a href="https://qspiders.com/branches/gurugram-jspiders?branchId=58-branchId" style="color: #00F0FF; text-decoration: underline;">
+      <p style="margin-top: 14px;">
+        <a href="https://qspiders.com/branches/gurugram-jspiders?branchId=58-branchId" style="color: #00F0FF; text-decoration: underline; font-weight: 600;">
           🔗 Official Branch Verification (QSpiders Gurugram)
         </a>
       </p>
@@ -267,7 +299,7 @@ My goal is to leverage data engineering, exploratory analysis, statistical model
 
 <br/>
 
-<!-- LIVE GITHUB METRICS & WIDGETS -->
+<!-- LIVE GITHUB ANALYTICS & WIDGETS -->
 <h2 align="left" style="color: #00F0FF;">📈 GITHUB ANALYTICS &amp; DASHBOARD</h2>
 
 <p align="center">
@@ -314,9 +346,9 @@ Interested in discussing Data Analytics, Machine Learning pipelines, or potentia
 <div align="center">
   <a href="https://github.com/ialtaf14"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
   &nbsp;
-  <a href="https://linkedin.com/in/ialtaf14"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/altaf-khan-7a544b256/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   &nbsp;
-  <a href="https://ialtaf14.github.io"><img src="https://img.shields.io/badge/Portfolio-00F0FF?style=for-the-badge&logoColor=black" alt="Portfolio"/></a>
+  <a href="https://ialtaf14.vercel.app"><img src="https://img.shields.io/badge/Live_Portfolio-00F0FF?style=for-the-badge&logoColor=black" alt="Portfolio"/></a>
   &nbsp;
   <a href="mailto:altafkhan122105@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   &nbsp;
