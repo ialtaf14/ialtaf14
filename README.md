@@ -124,19 +124,18 @@ Graduated: 2026
 
 **Started:** August 2025
 
-Technical training focused on **Python, SQL, Excel, Power BI, Pandas, NumPy, Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization, and Machine Learning fundamentals** through structured learning, coding practice, and project-based exercises.
+Technical training focused on **Python, SQL, Excel, Power BI, Pandas, NumPy, Data Cleaning, Exploratory Data Analysis (EDA), and Data Visualization** through structured learning, coding practice, and project-based exercises.
 
 ### Key Learning Areas
 
 - Python Programming
 - SQL & Relational Databases
-- Advanced Excel
+- Excel
 - Power BI
 - Pandas & NumPy
 - Data Cleaning & Preprocessing
 - Exploratory Data Analysis (EDA)
 - Data Visualization
-- Machine Learning Fundamentals
 - Project-Based Practice
 
 ---
