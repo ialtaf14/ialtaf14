@@ -1,10 +1,10 @@
 <a id="top"></a>
 
-<div align="center">
-
-<!-- HERO BANNER SVG WITH EMBEDDED REAL PHOTO -->
-<img src="./assets/hero.svg" alt="Altaf Khan Hero Banner" width="100%" />
-
+<div align="center" style="background: radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 28%), radial-gradient(circle at bottom right, rgba(168,85,247,0.14), transparent 32%), rgba(15,23,42,0.88); border: 1px solid rgba(255,255,255,0.12); border-radius: 32px; padding: 26px; backdrop-filter: blur(24px); box-shadow: 0 32px 80px rgba(0,0,0,0.24); margin-bottom: 28px;">
+  <div style="width: 100%; max-width: 980px; border-radius: 28px; overflow: hidden; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 12px;">
+    <!-- HERO BANNER SVG WITH EMBEDDED REAL PHOTO -->
+    <img src="./assets/hero.svg" alt="Altaf Khan Hero Banner" width="100%" style="border-radius: 24px;" />
+  </div>
 </div>
 
 <br/>
@@ -16,7 +16,7 @@
 <br/>
 
 <!-- RECRUITER SNAPSHOT GLASS CARD WITH REAL PHOTO -->
-<table align="center" width="100%" style="border-collapse: collapse; border: 1px solid rgba(0, 240, 255, 0.35); border-radius: 16px; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(16px); box-shadow: 0 12px 40px rgba(0,0,0,0.5);">
+<table align="center" width="100%" style="border-collapse: collapse; border: 1px solid rgba(255,255,255,0.14); border-radius: 18px; background: rgba(15, 23, 42, 0.55); backdrop-filter: blur(26px); box-shadow: 0 20px 50px rgba(0,0,0,0.28);">
   <tr>
     <td padding="24" style="padding: 24px;">
       <h3 align="left" style="margin-top: 0; color: #00F0FF; font-family: -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: 0.5px;">
@@ -65,7 +65,7 @@
 <br/>
 
 <!-- ABOUT ME -->
-<h2 align="left" style="color: #00F0FF;">👤 ABOUT ME</h2>
+<h2 align="left" style="color: #CFFAFE; text-shadow: 0 0 18px rgba(56,189,248,0.25);">👤 ABOUT ME</h2>
 
 <p align="left">
 I am a results-driven <strong>Data Analyst</strong> and <strong>Machine Learning Enthusiast</strong> passionate about translating raw, unstructured datasets into clear business intelligence and high-accuracy predictive models. With a Computer Science Engineering degree from Gurugram University and hands-on training in core programming, software testing, relational databases, and predictive modeling, I build end-to-end data pipelines.
@@ -84,7 +84,7 @@ My project work covers exploratory data analysis, data cleaning, feature enginee
 <br/>
 
 <!-- TECH STACK & TOOLS -->
-<h2 align="left" style="color: #00F0FF;">🛠 TECH STACK &amp; ANALYTICS TOOLKIT</h2>
+<h2 align="left" style="color: #CFFAFE; text-shadow: 0 0 18px rgba(56,189,248,0.22);">🛠 TECH STACK &amp; ANALYTICS TOOLKIT</h2>
 
 <table width="100%" style="border-collapse: collapse;">
   <tr>
@@ -133,7 +133,7 @@ My project work covers exploratory data analysis, data cleaning, feature enginee
 <br/>
 
 <!-- MACHINE LEARNING SECTION -->
-<h2 align="left" style="color: #00F0FF;">🧠 MACHINE LEARNING PIPELINE</h2>
+<h2 align="left" style="color: #CFFAFE; text-shadow: 0 0 18px rgba(56,189,248,0.22);">🧠 MACHINE LEARNING PIPELINE</h2>
 
 <div align="center">
   <img src="./assets/ml_architecture.svg" alt="ML Architecture Pipeline" width="100%" />
@@ -142,7 +142,7 @@ My project work covers exploratory data analysis, data cleaning, feature enginee
 <br/>
 
 <!-- DATA ANALYTICS SECTION -->
-<h2 align="left" style="color: #00F0FF;">📊 DATA ANALYTICS &amp; BUSINESS DASHBOARDS</h2>
+<h2 align="left" style="color: #CFFAFE; text-shadow: 0 0 18px rgba(56,189,248,0.22);">📊 DATA ANALYTICS &amp; BUSINESS DASHBOARDS</h2>
 
 <div align="center">
   <img src="./assets/analytics_dashboard.svg" alt="Data Analytics KPI Dashboard" width="100%" />
@@ -362,9 +362,9 @@ Interested in discussing Data Analytics, Machine Learning pipelines, or potentia
 <!-- FOOTER -->
 <div align="center">
   <img src="./assets/footer_wave.svg" alt="Footer Wave" width="100%" />
-  
+
   <br/>
-  
+
   <p style="color: #94A3B8; font-family: sans-serif;">
     <strong>Designed with Apple x OpenAI x Linear aesthetic</strong> • Crafted with ❤️ by <strong>Altaf Khan</strong>
   </p>
