@@ -359,17 +359,4 @@ Interested in discussing Data Analytics, Machine Learning pipelines, or potentia
 
 <br/><br/>
 
-<!-- FOOTER -->
-<div align="center">
-  <img src="./assets/footer_wave.svg" alt="Footer Wave" width="100%" />
-
-  <br/>
-
-  <p style="color: #94A3B8; font-family: sans-serif;">
-    <strong>Designed with Apple x OpenAI x Linear aesthetic</strong> • Crafted with ❤️ by <strong>Altaf Khan</strong>
-  </p>
-
-  <p>
-    <a href="#top" style="color: #00F0FF; font-weight: 700; text-decoration: none;">⬆ Back To Top</a>
-  </p>
-</div>
+<!-- FOOTER REMOVED -->
