@@ -10,17 +10,17 @@ Open to Entry-Level Data Analyst, Data Science & Machine Learning Opportunities
 **LinkedIn:** [https://www.linkedin.com/in/ialtaf14](https://www.linkedin.com/in/ialtaf14)
 **GitHub:** [https://github.com/ialtaf14](https://github.com/ialtaf14)
 **Professional Training:** QSpiders Gurugram
-**Current Focus:** Advanced SQL, Feature Engineering & Machine Learning
+**Current Focus:** Advanced SQL, Data Analysis, Feature Engineering & Machine Learning
 
 ---
 
 ## About
 
-I am an aspiring Data Analyst and Machine Learning enthusiast with a B.Tech in Computer Science & Engineering. I work with Python, SQL, Pandas, NumPy, Power BI, Excel, and Scikit-learn to explore data, identify patterns, build analytical solutions, and develop machine learning models.
+I am a Data Analyst and Machine Learning enthusiast with a B.Tech in Computer Science & Engineering. I work with Python, SQL, Pandas, NumPy, Power BI, Excel, and Scikit-learn to explore data, identify patterns, build analytical solutions, and develop machine learning models.
 
 My project work includes data cleaning, exploratory data analysis, feature engineering, model evaluation, dashboards, and application development. I focus on writing structured, maintainable code and turning data into practical insights.
 
-**Career objective:** Currently seeking entry-level opportunities in Data Analytics, Data Science, and Machine Learning where I can apply Python, SQL, data analysis, visualization, and machine learning skills to real-world problems.
+**Career objective:** Currently seeking entry-level opportunities in Data Analytics, Data Science, and Machine Learning where I can apply Python, SQL, data visualization, and machine learning skills to real-world problems.
 
 ---
 
@@ -29,7 +29,6 @@ My project work includes data cleaning, exploratory data analysis, feature engin
 ### Programming
 - Python
 - SQL
-- Java
 - Object-Oriented Programming
 - Data Structures & Algorithms
 
