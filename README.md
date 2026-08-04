@@ -1,4 +1,8 @@
-﻿# Altaf Khan
+﻿<p align="center">
+  <img src="assets/hero.svg" alt="Altaf Khan premium data analyst dashboard hero" width="100%" />
+</p>
+
+# Altaf Khan
 ### Data Analyst | B.Tech CSE Graduate | Python • SQL • Machine Learning • Data Science
 
 **Gurugram, India**
@@ -11,6 +15,24 @@ Open to Entry-Level Data Analyst, Data Science & Machine Learning Opportunities
 **GitHub:** [https://github.com/ialtaf14](https://github.com/ialtaf14)
 **Professional Training:** QSpiders Gurugram
 **Current Focus:** Advanced SQL, Data Analysis, Feature Engineering & Machine Learning
+
+---
+
+## Executive Summary
+
+A results-driven Data Analyst and Machine Learning enthusiast with a B.Tech in Computer Science & Engineering. I build clean analytics pipelines, structured exploratory analyses, interactive dashboards, and predictive ML prototypes to help teams make faster, data-backed decisions.
+
+- Strong foundation in Python, SQL, Pandas, NumPy, Power BI, Excel, and Scikit-learn.
+- Experienced in data cleaning, feature engineering, model evaluation, and dashboard delivery.
+- Focused on translating complex data into business-ready insights with clear visual storytelling.
+
+---
+
+## Dashboard Snapshot
+
+<p align="center">
+  <img src="assets/analytics_dashboard.svg" alt="Data analytics performance dashboard" width="100%" />
+</p>
 
 ---
 
@@ -158,11 +180,14 @@ Technical training focused on **Python, SQL, Excel, Power BI, Pandas, NumPy, Dat
 
 ## GitHub Profile
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ialtaf14&show_icons=true&theme=dark&count_private=false&include_all_commits=false)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ialtaf14&show_icons=true&theme=dark&count_private=false&include_all_commits=false" alt="GitHub stats card" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ialtaf14&layout=compact&theme=dark&langs_count=8" alt="Top languages" width="48%" />
+</p>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ialtaf14&layout=compact&theme=dark&langs_count=8)
-
-![Contribution Graph](https://ghchart.rshah.org/ialtaf14)
+<p align="center">
+  <img src="https://ghchart.rshah.org/ialtaf14" alt="Contribution graph" width="100%" />
+</p>
 
 **Featured repositories:** RealityML, Nova-AI, NovaRecon, NovaFlix, Portfolio, ialtaf14
 
