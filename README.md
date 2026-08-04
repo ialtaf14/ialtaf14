@@ -1,14 +1,16 @@
 ﻿# Altaf Khan
-### Data Analyst | Python • SQL • Power BI • Machine Learning
+### Data Analyst
 
-**Gurugram, India**  
-Open to Entry-Level Data Analyst, Data Science & ML Opportunities  
+**Gurugram, India**
+Open to Entry-Level Data Analyst, Data Science & Machine Learning Opportunities
 **B.Tech CSE — Graduated 2026**
 
-**Portfolio:** https://ialtaf14.vercel.app  
-**Email:** [altafkhan122105@gmail.com](mailto:altafkhan122105@gmail.com)  
-**LinkedIn:** [https://www.linkedin.com/in/altaf-khan](https://www.linkedin.com/in/altaf-khan)  
+**Portfolio:** https://ialtaf14.vercel.app
+**Email:** [altafkhan122105@gmail.com](mailto:altafkhan122105@gmail.com)
+**LinkedIn:** [https://www.linkedin.com/in/altaf-khan](https://www.linkedin.com/in/altaf-khan)
 **GitHub:** [https://github.com/ialtaf14](https://github.com/ialtaf14)
+**Professional Training:** QSpiders Gurugram
+**Current Focus:** Advanced SQL, Feature Engineering & Machine Learning
 
 ---
 
@@ -85,7 +87,6 @@ Data Collection → Data Cleaning → EDA → Feature Engineering → Model Deve
 
 ### NovaRecon — OSINT & Cyber Threat Intelligence Platform
 - A security-focused information analysis platform for exploring publicly available technical and domain-related information.
-- Includes IP geolocation, social footprint analysis, WHOIS/DNS data, breach exposure, and threat telemetry.
 - Built with Next.js, TypeScript, FastAPI, Tailwind CSS, and SQLite.
 - [Repository](https://github.com/ialtaf14/NovaRecon)
 - [Live Demo](https://novarecon-frontend.onrender.com/)
@@ -106,21 +107,22 @@ Data Collection → Data Cleaning → EDA → Feature Engineering → Model Deve
 
 ## Education
 
-**B.Tech — Computer Science & Engineering**  
-Mewat Engineering College, Nuh  
-Affiliated with Gurugram University  
+**B.Tech — Computer Science & Engineering**
+Mewat Engineering College, Nuh
+Affiliated with Gurugram University
 Graduated: 2026
 
-**College website:** https://www.mecw.ac.in/  
+**College website:** https://www.mecw.ac.in/
 **University website:** https://gurugramuniversity.ac.in/
 
 ---
 
 ## Training & Professional Development
 
-**Software Testing & Programming Training**  
-QSpiders — Gurugram  
+**Software Testing & Programming Training**
+QSpiders — Gurugram
 Started August 2025
+**Technical Training — Programming, SQL & Data Analytics**
 
 Technical training focused on programming fundamentals, SQL and relational databases, Java concepts, software testing fundamentals, problem-solving, and software development practices.
 
@@ -128,20 +130,20 @@ Technical training focused on programming fundamentals, SQL and relational datab
 
 ## Technical Credentials
 
-- **Artificial Intelligence: Concepts and Techniques**  
-  NPTEL / IISc Bangalore  
+- **Artificial Intelligence: Concepts and Techniques**
+  NPTEL / IISc Bangalore
   Jul 2025 – Aug 2025
 
-- **Introduction to Internet of Things**  
-  NPTEL / IIT Kharagpur  
+- **Introduction to Internet of Things**
+  NPTEL / IIT Kharagpur
   Jul 2025 – Aug 2025
 
-- **Data Analytics Essentials**  
-  Cisco Networking Academy  
+- **Data Analytics Essentials**
+  Cisco Networking Academy
   Jan 2026 – Feb 2026
 
-- **Introduction to Data Science**  
-  Cisco Networking Academy  
+- **Introduction to Data Science**
+  Cisco Networking Academy
   Jan 2026 – Feb 2026
 
 ---
