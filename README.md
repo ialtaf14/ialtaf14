@@ -7,7 +7,7 @@ Open to Entry-Level Data Analyst, Data Science & Machine Learning Opportunities
 
 **Portfolio:** https://ialtaf14.vercel.app
 **Email:** [altafkhan122105@gmail.com](mailto:altafkhan122105@gmail.com)
-**LinkedIn:** [https://www.linkedin.com/in/altaf-khan](https://www.linkedin.com/in/altaf-khan)
+**LinkedIn:** [https://www.linkedin.com/in/ialtaf14](https://www.linkedin.com/in/ialtaf14)
 **GitHub:** [https://github.com/ialtaf14](https://github.com/ialtaf14)
 **Professional Training:** QSpiders Gurugram
 **Current Focus:** Advanced SQL, Feature Engineering & Machine Learning
