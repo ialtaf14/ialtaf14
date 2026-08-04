@@ -1,5 +1,5 @@
 ﻿# Altaf Khan
-### Data Analyst
+### Data Analyst | B.Tech CSE Graduate | Python • SQL • Machine Learning • Data Science
 
 **Gurugram, India**
 Open to Entry-Level Data Analyst, Data Science & Machine Learning Opportunities
@@ -78,30 +78,27 @@ Data Collection → Data Cleaning → EDA → Feature Engineering → Model Deve
 
 ## Featured Projects
 
-### NovaFlix — Movie Recommendation Platform
-- A movie recommendation platform with content-based recommendations using metadata similarity.
-- Uses Scikit-learn cosine similarity to identify movies with similar characteristics.
-- Built with React, Vite, FastAPI, Python, and Scikit-learn.
-- [Repository](https://github.com/ialtaf14/Novaflix)
-- [Live Demo](https://novaflix-bice.vercel.app)
-
-### NovaRecon — OSINT & Cyber Threat Intelligence Platform
-- A security-focused information analysis platform for exploring publicly available technical and domain-related information.
-- Built with Next.js, TypeScript, FastAPI, Tailwind CSS, and SQLite.
-- [Repository](https://github.com/ialtaf14/NovaRecon)
-- [Live Demo](https://novarecon-frontend.onrender.com/)
-
 ### RealityML — AI Feasibility & Data Quality Suite
-- A data and machine learning utility focused on dataset preparation and model readiness.
-- Includes synthetic dataset generation, automated data quality checks, and feature-level analysis.
+- AI feasibility and data quality suite for dataset preparation, automated validation, synthetic data generation, and model readiness analysis.
 - Built with Python, Pandas, Scikit-learn, and Streamlit.
 - [Repository](https://github.com/ialtaf14/RealityML)
 
+### NovaFlix — Movie Recommendation Platform
+- Content-based movie recommendation platform using metadata similarity and Scikit-learn cosine similarity.
+- Built with React, Vite, FastAPI, and Python.
+- [Repository](https://github.com/ialtaf14/Novaflix)
+- [Live Demo](https://novaflix-bice.vercel.app)
+
 ### Nova AI — AI Learning Assistant
-- A learning assistant powered by the Google Gemini API.
-- Helps users understand concepts across AI, Machine Learning, Data Science, Python, and Software Engineering.
+- AI learning assistant powered by the Google Gemini API for exploring concepts in AI, Machine Learning, Data Science, Python, and Software Engineering.
 - Built with Python, Gemini API, FastAPI, and JSON.
 - [Repository](https://github.com/ialtaf14/Nova-AI)
+
+### NovaRecon — OSINT & Cyber Threat Intelligence Platform
+- Security-focused information analysis platform for exploring publicly available technical and domain-related information.
+- Built with Next.js, FastAPI, Tailwind CSS, and SQLite.
+- [Repository](https://github.com/ialtaf14/NovaRecon)
+- [Live Demo](https://novarecon-frontend.onrender.com/)
 
 ---
 
