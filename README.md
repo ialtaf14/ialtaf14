@@ -114,9 +114,6 @@ Graduated: 2026
 
 ---
 
-## Training & Professional Development
-
-**Software Testing & Programming Training**
 ## TRAINING & PROFESSIONAL DEVELOPMENT
 
 ### Data Analytics & Python Training
