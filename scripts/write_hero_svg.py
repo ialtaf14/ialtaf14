@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" width="100%" height="100%">
+from pathlib import Path
+
+svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" width="100%" height="100%">
   <defs>
     <radialGradient id="bg1" cx="20%" cy="20%" r="50%">
       <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.22"/>
@@ -141,4 +143,5 @@
   <circle cx="824" cy="390" r="18" fill="#22D3EE" opacity="0.28" class="pulse"/>
   <circle cx="824" cy="390" r="10" fill="#38BDF8"/>
   <text x="100" y="420" font-family="Inter, Arial, sans-serif" font-size="10.5" fill="#94A3B8">Built for GitHub profiles — no scripts, pure SVG motion.</text>
-</svg>
+</svg>"""
+Path("assets/hero.svg").write_text(svg_content, encoding="utf-8")
