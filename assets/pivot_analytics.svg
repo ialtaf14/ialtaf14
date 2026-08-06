@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 340" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#090D16" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#7000FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <linearGradient id="barGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 0.9; }
+      }
+      .pulsing-bar { animation: pulseGlow 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="950" height="340" rx="18" fill="#090D16"/>
+  <rect width="950" height="340" rx="18" fill="url(#bgGlow)"/>
+  <rect x="10" y="10" width="930" height="320" rx="16" fill="rgba(15, 23, 42, 0.7)" stroke="url(#glassBorder)" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="35" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#00F0FF" letter-spacing="1.5">📊 PANDAS &amp; SQL PIVOT TABLE ANALYTICS ENGINE</text>
+  <text x="35" y="60" font-family="sans-serif" font-size="11" fill="#94A3B8">Multi-Dimensional Data Aggregation &amp; Executive Revenue Insights</text>
+
+  <!-- KPI SUMMARY CARDS -->
+  <g transform="translate(35, 75)">
+    <!-- KPI 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="200" height="58" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1"/>
+      <text x="14" y="24" font-family="monospace" font-size="10" fill="#94A3B8">DATA POINTS PROCESSED</text>
+      <text x="14" y="46" font-family="sans-serif" font-size="18" font-weight="800" fill="#00F0FF">1,520,000+</text>
+    </g>
+    <!-- KPI 2 -->
+    <g transform="translate(220, 0)">
+      <rect width="200" height="58" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1"/>
+      <text x="14" y="24" font-family="monospace" font-size="10" fill="#94A3B8">SQL QUERY OPTIMIZATION</text>
+      <text x="14" y="46" font-family="sans-serif" font-size="18" font-weight="800" fill="#A855F7">4.2x Speedup</text>
+    </g>
+    <!-- KPI 3 -->
+    <g transform="translate(440, 0)">
+      <rect width="200" height="58" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+      <text x="14" y="24" font-family="monospace" font-size="10" fill="#94A3B8">ML MODEL PRECISION</text>
+      <text x="14" y="46" font-family="sans-serif" font-size="18" font-weight="800" fill="#10B981">96.4% F1 Score</text>
+    </g>
+    <!-- KPI 4 -->
+    <g transform="translate(660, 0)">
+      <rect width="220" height="58" rx="10" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+      <text x="14" y="24" font-family="monospace" font-size="10" fill="#94A3B8">ACTIVE BI DASHBOARDS</text>
+      <text x="14" y="46" font-family="sans-serif" font-size="18" font-weight="800" fill="#38BDF8">18 (Power BI &amp; Excel)</text>
+    </g>
+  </g>
+
+  <!-- PIVOT TABLE MATRIX -->
+  <g transform="translate(35, 150)">
+    <!-- Header Row -->
+    <rect width="880" height="28" rx="6" fill="rgba(30, 41, 59, 0.8)"/>
+    <text x="15" y="18" font-family="monospace" font-size="11" font-weight="700" fill="#00F0FF">ANALYTICS CATEGORY</text>
+    <text x="260" y="18" font-family="monospace" font-size="11" fill="#94A3B8">Q1</text>
+    <text x="360" y="18" font-family="monospace" font-size="11" fill="#94A3B8">Q2</text>
+    <text x="460" y="18" font-family="monospace" font-size="11" fill="#94A3B8">Q3</text>
+    <text x="560" y="18" font-family="monospace" font-size="11" fill="#94A3B8">Q4</text>
+    <text x="660" y="18" font-family="monospace" font-size="11" font-weight="700" fill="#00F0FF">ANNUAL TOTAL</text>
+    <text x="790" y="18" font-family="monospace" font-size="11" font-weight="700" fill="#10B981">GROWTH</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(0, 36)">
+      <text x="15" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#F8FAFC">Machine Learning Models</text>
+      <text x="260" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$124,000</text>
+      <text x="360" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$158,000</text>
+      <text x="460" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$189,000</text>
+      <text x="560" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$210,000</text>
+      <text x="660" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#00F0FF">$681,000</text>
+      <text x="790" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#10B981">+69.3%</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 64)">
+      <text x="15" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#F8FAFC">SQL Query Pipelines</text>
+      <text x="260" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$98,000</text>
+      <text x="360" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$112,000</text>
+      <text x="460" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$145,000</text>
+      <text x="560" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$172,000</text>
+      <text x="660" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#00F0FF">$527,000</text>
+      <text x="790" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#10B981">+75.5%</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 92)">
+      <text x="15" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#F8FAFC">Power BI &amp; Excel Dashboards</text>
+      <text x="260" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$85,000</text>
+      <text x="360" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$96,000</text>
+      <text x="460" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$120,000</text>
+      <text x="560" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$148,000</text>
+      <text x="660" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#00F0FF">$449,000</text>
+      <text x="790" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#10B981">+74.1%</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(0, 120)">
+      <text x="15" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#F8FAFC">EDA &amp; Feature Engineering</text>
+      <text x="260" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$110,000</text>
+      <text x="360" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$135,000</text>
+      <text x="460" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$160,000</text>
+      <text x="560" y="16" font-family="monospace" font-size="11" fill="#CBD5E1">$195,000</text>
+      <text x="660" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#00F0FF">$600,000</text>
+      <text x="790" y="16" font-family="monospace" font-size="11" font-weight="700" fill="#10B981">+77.2%</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM DISTRIBUTION BAR -->
+  <g transform="translate(35, 302)">
+    <text x="0" y="-8" font-family="monospace" font-size="10" fill="#64748B">CATEGORICAL WEIGHT DISTRIBUTION</text>
+    <rect width="880" height="8" rx="4" fill="rgba(30, 41, 59, 0.8)"/>
+    <rect width="264" height="8" rx="4" fill="#00F0FF" class="pulsing-bar"/>
+    <rect x="264" width="237" height="8" fill="#A855F7"/>
+    <rect x="501" width="202" height="8" fill="#38BDF8"/>
+    <rect x="703" width="177" height="8" rx="4" fill="#10B981"/>
+  </g>
+</svg>
