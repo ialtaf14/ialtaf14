@@ -150,14 +150,14 @@ August 2025 – August 2026 · On-site
 | | |
 |---|---|
 | **Email** | [altafkhan122105@gmail.com](mailto:altafkhan122105@gmail.com) |
-| **LinkedIn** | [linkedin.com/in/altaf-khan-7a544b256](https://www.linkedin.com/in/altaf-khan-7a544b256/) |
+| **LinkedIn** | [linkedin.com/in/ialtaf14](https://www.linkedin.com/in/ialtaf14) |
 | **Portfolio** | [ialtaf14.vercel.app](https://ialtaf14.vercel.app) |
 | **GitHub** | [github.com/ialtaf14](https://github.com/ialtaf14) |
 | **Location** | Gurugram, Haryana, India |
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/altaf-khan-7a544b256/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ialtaf14/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ialtaf14)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ialtaf14.vercel.app)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:altafkhan122105@gmail.com)
