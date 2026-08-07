@@ -1,341 +1,249 @@
-import base64
-import os
+import base64, os
 
 img_path = r"c:\Users\altaf\Desktop\ialtaf14\assets\altaf_khan.jpg"
 with open(img_path, "rb") as f:
-    b64_data = base64.b64encode(f.read()).decode('utf-8')
+    b64 = base64.b64encode(f.read()).decode("utf-8")
 
-hero_svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="100%" height="100%">
+svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="100%" height="100%">
   <defs>
-    <!-- Background Gradients -->
-    <radialGradient id="bgGlow1" cx="15%" cy="20%" r="65%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.20"/>
-      <stop offset="100%" stop-color="#090D16" stop-opacity="0"/>
+    <radialGradient id="bg1" cx="20%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0f1e" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="bgGlow2" cx="85%" cy="80%" r="60%">
-      <stop offset="0%" stop-color="#7000FF" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#090D16" stop-opacity="0"/>
+    <radialGradient id="bg2" cx="80%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#0a0f1e" stop-opacity="0"/>
     </radialGradient>
-
-    <!-- Glass Border Gradient -->
-    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.7"/>
-      <stop offset="40%" stop-color="#7000FF" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.6"/>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.55"/>
     </linearGradient>
-
-    <!-- Text Gradients -->
-    <linearGradient id="nameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="50%" stop-color="#F1F5F9"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
+    <linearGradient id="nameg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
-
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F0FF"/>
-      <stop offset="50%" stop-color="#7000FF"/>
-      <stop offset="100%" stop-color="#3B82F6"/>
+    <linearGradient id="btngrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
-
-    <linearGradient id="codeBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1E293B"/>
-      <stop offset="100%" stop-color="#0F172A"/>
+    <linearGradient id="codebg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0a0f1e"/>
     </linearGradient>
-
-    <linearGradient id="codeBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="100%" stop-color="#090D16"/>
+    <linearGradient id="titlebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-
-    <!-- Glow Filters -->
-    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
-    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.55"/>
     </filter>
-
-    <filter id="codeShadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#00F0FF" flood-opacity="0.15"/>
+    <filter id="codeGlow">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#0ea5e9" flood-opacity="0.18"/>
     </filter>
-
-    <!-- Photo Clip -->
-    <clipPath id="photoClip">
-      <rect x="0" y="0" width="200" height="268" rx="14"/>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="196" height="258" rx="13"/>
     </clipPath>
-
-    <!-- Blinking cursor animation -->
     <style>
-      @keyframes blink {{
-        0%, 100% {{ opacity: 1; }}
-        50% {{ opacity: 0; }}
-      }}
-      .cursor-blink {{ animation: blink 1.1s step-end infinite; }}
+      @keyframes blink {{ 0%,100%{{opacity:1}} 50%{{opacity:0}} }}
+      .cur {{ animation: blink 1.1s step-end infinite; }}
     </style>
   </defs>
 
-  <!-- ===== BASE DARK CANVAS ===== -->
-  <rect width="1100" height="420" rx="18" fill="#090D16"/>
-  <rect width="1100" height="420" rx="18" fill="url(#bgGlow1)"/>
-  <rect width="1100" height="420" rx="18" fill="url(#bgGlow2)"/>
+  <!-- Canvas -->
+  <rect width="1100" height="400" rx="16" fill="#0a0f1e"/>
+  <rect width="1100" height="400" rx="16" fill="url(#bg1)"/>
+  <rect width="1100" height="400" rx="16" fill="url(#bg2)"/>
 
-  <!-- Subtle Grid -->
-  <g opacity="0.05" stroke="#FFFFFF" stroke-width="0.8">
-    <path d="M0 42 H1100 M0 84 H1100 M0 126 H1100 M0 168 H1100 M0 210 H1100 M0 252 H1100 M0 294 H1100 M0 336 H1100 M0 378 H1100"/>
-    <path d="M55 0 V420 M110 0 V420 M165 0 V420 M220 0 V420 M275 0 V420 M330 0 V420 M385 0 V420 M440 0 V420 M495 0 V420 M550 0 V420 M605 0 V420 M660 0 V420 M715 0 V420 M770 0 V420 M825 0 V420 M880 0 V420 M935 0 V420 M990 0 V420 M1045 0 V420"/>
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#fff" stroke-width="0.7">
+    <path d="M0 50H1100 M0 100H1100 M0 150H1100 M0 200H1100 M0 250H1100 M0 300H1100 M0 350H1100"/>
+    <path d="M100 0V400 M200 0V400 M300 0V400 M400 0V400 M500 0V400 M600 0V400 M700 0V400 M800 0V400 M900 0V400 M1000 0V400"/>
   </g>
 
-  <!-- Main Glass Panel -->
-  <rect x="12" y="12" width="1076" height="396" rx="14" fill="rgba(15, 23, 42, 0.65)" stroke="url(#glassBorder)" stroke-width="1.5" filter="url(#softShadow)"/>
+  <!-- Main glass panel -->
+  <rect x="12" y="12" width="1076" height="376" rx="13" fill="rgba(13,20,40,0.70)" stroke="url(#border)" stroke-width="1.5" filter="url(#shadow)"/>
 
-  <!-- ===== COLUMN 1: PHOTO (LEFT) ===== -->
-  <g transform="translate(36, 36)">
-    <!-- Neon border ring around photo -->
-    <rect x="-3" y="-3" width="206" height="274" rx="17" fill="none" stroke="url(#glassBorder)" stroke-width="2" filter="url(#neonGlow)"/>
-    <!-- Photo clipped -->
-    <g clip-path="url(#photoClip)">
-      <image href="data:image/jpeg;base64,{b64_data}" x="-8" y="-10" width="216" height="290" preserveAspectRatio="xMidYMid slice"/>
-      <rect width="200" height="268" fill="url(#codeBarGrad)" opacity="0.12"/>
+  <!-- ── COL 1: PHOTO ── -->
+  <g transform="translate(34,34)">
+    <rect x="-3" y="-3" width="202" height="264" rx="16" fill="none" stroke="url(#border)" stroke-width="2" filter="url(#glow)"/>
+    <g clip-path="url(#clip)">
+      <image href="data:image/jpeg;base64,{b64}" x="-8" y="-8" width="212" height="276" preserveAspectRatio="xMidYMid slice"/>
+      <rect width="196" height="258" fill="rgba(10,15,30,0.10)"/>
     </g>
-    <!-- Name badge at bottom of photo -->
-    <g transform="translate(8, 228)">
-      <rect width="184" height="30" rx="7" fill="rgba(9,13,22,0.88)" stroke="rgba(0,240,255,0.4)" stroke-width="1"/>
-      <circle cx="14" cy="15" r="4" fill="#10B981" filter="url(#neonGlow)"/>
-      <text x="26" y="19" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC">Altaf Khan • Data Analyst</text>
+    <!-- name badge -->
+    <g transform="translate(6,220)">
+      <rect width="180" height="28" rx="6" fill="rgba(8,12,24,0.90)" stroke="rgba(56,189,248,0.45)" stroke-width="1"/>
+      <circle cx="13" cy="14" r="4" fill="#22c55e" filter="url(#glow)"/>
+      <text x="24" y="19" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">Altaf Khan — Data Analyst</text>
     </g>
   </g>
 
-  <!-- ===== COLUMN 2: INFO (CENTER) ===== -->
-  <g transform="translate(266, 36)">
+  <!-- ── COL 2: INFO ── -->
+  <g transform="translate(258,32)">
 
-    <!-- Status Pill -->
-    <rect width="280" height="26" rx="13" fill="rgba(0,240,255,0.08)" stroke="rgba(0,240,255,0.35)" stroke-width="1"/>
-    <circle cx="15" cy="13" r="3.5" fill="#00F0FF" filter="url(#neonGlow)"/>
-    <text x="28" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#00F0FF" letter-spacing="1.1">AI &amp; DATA SCIENCE PORTFOLIO</text>
+    <!-- Badge -->
+    <rect width="268" height="24" rx="12" fill="rgba(14,165,233,0.10)" stroke="rgba(14,165,233,0.40)" stroke-width="1"/>
+    <circle cx="14" cy="12" r="3.5" fill="#38bdf8" filter="url(#glow)"/>
+    <text x="26" y="16.5" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1">DATA ANALYST • OPEN TO WORK</text>
 
     <!-- Name -->
-    <text x="0" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" font-weight="800" fill="url(#nameGradient)" letter-spacing="-0.5">Altaf Khan</text>
+    <text x="0" y="70" font-family="system-ui,-apple-system,sans-serif" font-size="42" font-weight="800" fill="url(#nameg)" letter-spacing="-0.5">Altaf Khan</text>
 
-    <!-- Roles -->
-    <text x="0" y="100" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="600" fill="#38BDF8" letter-spacing="0.2">
-      Data Analyst <tspan fill="#7000FF">•</tspan> ML Enthusiast <tspan fill="#7000FF">•</tspan> Aspiring Data Scientist
-    </text>
+    <!-- Title -->
+    <text x="0" y="95" font-family="system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#7dd3fc" letter-spacing="0.3">Data Analyst  ·  Python  ·  SQL  ·  Power BI  ·  Excel</text>
 
-    <!-- Tagline -->
-    <text x="0" y="124" font-family="sans-serif" font-size="12" fill="#94A3B8">
-      "Transforming complex datasets into predictive ML models &amp; executive dashboards."
-    </text>
+    <!-- Summary line -->
+    <text x="0" y="118" font-family="system-ui,sans-serif" font-size="11.5" fill="#94a3b8">B.Tech CSE Graduate, 2026 — Pandas · NumPy · Matplotlib · Jupyter · EDA · BI Dashboards</text>
 
-    <!-- Tech Badges -->
-    <g transform="translate(0, 144)">
-      <g transform="translate(0,0)"><rect width="78" height="26" rx="7" fill="rgba(30,41,59,0.75)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/><text x="39" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#38BDF8" text-anchor="middle">Python</text></g>
-      <g transform="translate(88,0)"><rect width="58" height="26" rx="7" fill="rgba(30,41,59,0.75)" stroke="rgba(168,85,247,0.4)" stroke-width="1"/><text x="29" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#C084FC" text-anchor="middle">SQL</text></g>
-      <g transform="translate(156,0)"><rect width="74" height="26" rx="7" fill="rgba(30,41,59,0.75)" stroke="rgba(0,240,255,0.4)" stroke-width="1"/><text x="37" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#00F0FF" text-anchor="middle">Pandas</text></g>
-      <g transform="translate(240,0)"><rect width="84" height="26" rx="7" fill="rgba(30,41,59,0.75)" stroke="rgba(245,158,11,0.4)" stroke-width="1"/><text x="42" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#FBBF24" text-anchor="middle">Power BI</text></g>
-      <g transform="translate(334,0)"><rect width="110" height="26" rx="7" fill="rgba(30,41,59,0.75)" stroke="rgba(236,72,153,0.4)" stroke-width="1"/><text x="55" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#F472B6" text-anchor="middle">Scikit-Learn</text></g>
+    <!-- Skill badges row 1 -->
+    <g transform="translate(0,136)">
+      <g><rect width="68" height="24" rx="6" fill="rgba(14,165,233,0.15)" stroke="rgba(14,165,233,0.45)" stroke-width="1"/><text x="34" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700" fill="#38bdf8" text-anchor="middle">Python</text></g>
+      <g transform="translate(76,0)"><rect width="50" height="24" rx="6" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.45)" stroke-width="1"/><text x="25" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700" fill="#a5b4fc" text-anchor="middle">SQL</text></g>
+      <g transform="translate(134,0)"><rect width="80" height="24" rx="6" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.40)" stroke-width="1"/><text x="40" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700" fill="#fbbf24" text-anchor="middle">Power BI</text></g>
+      <g transform="translate(222,0)"><rect width="58" height="24" rx="6" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.40)" stroke-width="1"/><text x="29" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700" fill="#4ade80" text-anchor="middle">Excel</text></g>
+      <g transform="translate(288,0)"><rect width="66" height="24" rx="6" fill="rgba(14,165,233,0.10)" stroke="rgba(14,165,233,0.35)" stroke-width="1"/><text x="33" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600" fill="#7dd3fc" text-anchor="middle">Pandas</text></g>
+      <g transform="translate(362,0)"><rect width="66" height="24" rx="6" fill="rgba(99,102,241,0.10)" stroke="rgba(99,102,241,0.35)" stroke-width="1"/><text x="33" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600" fill="#c7d2fe" text-anchor="middle">Matplotlib</text></g>
     </g>
 
-    <!-- Training Card -->
-    <g transform="translate(0, 184)">
-      <rect width="490" height="44" rx="9" fill="rgba(15,23,42,0.7)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-      <circle cx="18" cy="22" r="5" fill="#10B981" filter="url(#neonGlow)"/>
-      <text x="32" y="18" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#F8FAFC">Software Testing &amp; Programming Trainee</text>
-      <text x="32" y="33" font-family="sans-serif" font-size="10.5" fill="#94A3B8">QSpiders Gurugram  •  August 2025 – Present</text>
+    <!-- Skill badges row 2 -->
+    <g transform="translate(0,168)">
+      <g><rect width="66" height="24" rx="6" fill="rgba(14,165,233,0.10)" stroke="rgba(14,165,233,0.30)" stroke-width="1"/><text x="33" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600" fill="#7dd3fc" text-anchor="middle">NumPy</text></g>
+      <g transform="translate(74,0)"><rect width="92" height="24" rx="6" fill="rgba(34,197,94,0.10)" stroke="rgba(34,197,94,0.30)" stroke-width="1"/><text x="46" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600" fill="#86efac" text-anchor="middle">Jupyter NB</text></g>
+      <g transform="translate(174,0)"><rect width="50" height="24" rx="6" fill="rgba(249,115,22,0.10)" stroke="rgba(249,115,22,0.35)" stroke-width="1"/><text x="25" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600" fill="#fdba74" text-anchor="middle">EDA</text></g>
+      <g transform="translate(232,0)"><rect width="94" height="24" rx="6" fill="rgba(245,158,11,0.10)" stroke="rgba(245,158,11,0.30)" stroke-width="1"/><text x="47" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600" fill="#fcd34d" text-anchor="middle">Scikit-learn</text></g>
+      <g transform="translate(334,0)"><rect width="90" height="24" rx="6" fill="rgba(99,102,241,0.10)" stroke="rgba(99,102,241,0.30)" stroke-width="1"/><text x="45" y="16" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600" fill="#a5b4fc" text-anchor="middle">HTML/CSS ✱</text></g>
     </g>
 
-    <!-- Action Buttons -->
-    <g transform="translate(0, 242)">
+    <!-- Training info box -->
+    <g transform="translate(0,204)">
+      <rect width="470" height="38" rx="8" fill="rgba(13,20,40,0.65)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <circle cx="16" cy="19" r="4" fill="#22c55e" filter="url(#glow)"/>
+      <text x="30" y="14.5" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Data Analytics Training — QSpiders Gurugram</text>
+      <text x="30" y="29" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8">Aug 2025 – Aug 2026  ·  Python · SQL · Power BI · Excel · Pandas · EDA</text>
+    </g>
+
+    <!-- Action buttons -->
+    <g transform="translate(0,256)">
       <a href="https://ialtaf14.vercel.app">
-        <rect width="155" height="36" rx="18" fill="url(#accentGradient)" stroke="#00F0FF" stroke-width="1" filter="url(#neonGlow)"/>
-        <text x="77.5" y="23" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">🌐 Portfolio App</text>
+        <rect width="148" height="34" rx="17" fill="url(#btngrad)" stroke="rgba(56,189,248,0.5)" stroke-width="1" filter="url(#glow)"/>
+        <text x="74" y="22" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">🌐 Portfolio</text>
       </a>
       <a href="https://www.linkedin.com/in/altaf-khan-7a544b256/">
-        <g transform="translate(168, 0)">
-          <rect width="110" height="36" rx="18" fill="rgba(10,102,194,0.2)" stroke="rgba(10,102,194,0.5)" stroke-width="1"/>
-          <text x="55" y="23" font-family="sans-serif" font-size="12" font-weight="600" fill="#38BDF8" text-anchor="middle">💼 LinkedIn</text>
+        <g transform="translate(160,0)">
+          <rect width="110" height="34" rx="17" fill="rgba(10,102,194,0.20)" stroke="rgba(10,102,194,0.55)" stroke-width="1"/>
+          <text x="55" y="22" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#60a5fa" text-anchor="middle">💼 LinkedIn</text>
         </g>
       </a>
       <a href="mailto:altafkhan122105@gmail.com">
-        <g transform="translate(288, 0)">
-          <rect width="110" height="36" rx="18" fill="rgba(234,67,53,0.15)" stroke="rgba(234,67,53,0.4)" stroke-width="1"/>
-          <text x="55" y="23" font-family="sans-serif" font-size="12" font-weight="600" fill="#F87171" text-anchor="middle">📧 Gmail</text>
+        <g transform="translate(280,0)">
+          <rect width="98" height="34" rx="17" fill="rgba(234,67,53,0.15)" stroke="rgba(234,67,53,0.45)" stroke-width="1"/>
+          <text x="49" y="22" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#f87171" text-anchor="middle">📧 Email</text>
+        </g>
+      </a>
+      <a href="https://github.com/ialtaf14">
+        <g transform="translate(388,0)">
+          <rect width="98" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+          <text x="49" y="22" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">🐙 GitHub</text>
         </g>
       </a>
     </g>
 
   </g>
 
-  <!-- ===== COLUMN 3: CODE WINDOW (RIGHT) — FIXED POSITION ===== -->
-  <g transform="translate(784, 26)">
-    <!-- Outer glow border -->
-    <rect width="296" height="368" rx="14" fill="none" stroke="rgba(0,240,255,0.25)" stroke-width="1" filter="url(#codeShadow)"/>
-    <!-- Window background -->
-    <rect width="296" height="368" rx="14" fill="url(#codeBg)" stroke="rgba(0,240,255,0.18)" stroke-width="1"/>
+  <!-- ── COL 3: CODE WINDOW (RIGHT) ── -->
+  <g transform="translate(790,22)">
+    <rect width="284" height="354" rx="12" fill="url(#codebg)" stroke="rgba(56,189,248,0.22)" stroke-width="1.2" filter="url(#codeGlow)"/>
 
     <!-- Title bar -->
-    <rect width="296" height="34" rx="14" fill="url(#codeBarGrad)"/>
-    <rect y="14" width="296" height="20" fill="url(#codeBarGrad)"/>
+    <rect width="284" height="32" rx="12" fill="url(#titlebar)"/>
+    <rect y="16" width="284" height="16" fill="url(#titlebar)"/>
+    <circle cx="15" cy="16" r="4.5" fill="#ff5f56"/>
+    <circle cx="29" cy="16" r="4.5" fill="#ffbd2e"/>
+    <circle cx="43" cy="16" r="4.5" fill="#27c93f"/>
+    <text x="142" y="20" font-family="'Fira Code',monospace" font-size="9.5" fill="#6b7280" text-anchor="middle">data_analysis.py</text>
 
-    <!-- macOS dots -->
-    <circle cx="16" cy="17" r="5" fill="#FF5F56"/>
-    <circle cx="32" cy="17" r="5" fill="#FFBD2E"/>
-    <circle cx="48" cy="17" r="5" fill="#27C93F"/>
+    <line x1="0" y1="32" x2="284" y2="32" stroke="rgba(56,189,248,0.12)" stroke-width="1"/>
 
-    <!-- File name -->
-    <text x="148" y="21" font-family="'Fira Code', monospace" font-size="10" fill="#94A3B8" text-anchor="middle">nova_analytics_engine.py</text>
+    <!-- Code content -->
+    <g transform="translate(0,44)" font-family="'Fira Code',Consolas,monospace" font-size="11">
 
-    <!-- Divider under title bar -->
-    <line x1="0" y1="34" x2="296" y2="34" stroke="rgba(0,240,255,0.15)" stroke-width="1"/>
+      <text x="12" y="14" fill="#374151">1</text>
+      <text x="30" y="14"><tspan fill="#f472b6">import</tspan><tspan fill="#e2e8f0"> pandas </tspan><tspan fill="#f472b6">as</tspan><tspan fill="#38bdf8"> pd</tspan></text>
 
-    <!-- Line numbers + code -->
-    <g transform="translate(0, 46)" font-family="'Fira Code', Consolas, monospace" font-size="11.5">
+      <text x="12" y="30" fill="#374151">2</text>
+      <text x="30" y="30"><tspan fill="#f472b6">import</tspan><tspan fill="#e2e8f0"> numpy </tspan><tspan fill="#f472b6">as</tspan><tspan fill="#38bdf8"> np</tspan></text>
 
-      <!-- Line 1 -->
-      <text x="14" y="14" fill="#374151">1</text>
-      <text x="36" y="14">
-        <tspan fill="#F472B6">import</tspan>
-        <tspan fill="#F8FAFC"> pandas </tspan>
-        <tspan fill="#F472B6">as</tspan>
-        <tspan fill="#38BDF8"> pd</tspan>
-      </text>
+      <text x="12" y="46" fill="#374151">3</text>
+      <text x="30" y="46"><tspan fill="#f472b6">import</tspan><tspan fill="#e2e8f0"> matplotlib.pyplot </tspan><tspan fill="#f472b6">as</tspan><tspan fill="#38bdf8"> plt</tspan></text>
 
-      <!-- Line 2 -->
-      <text x="14" y="32" fill="#374151">2</text>
-      <text x="36" y="32">
-        <tspan fill="#F472B6">import</tspan>
-        <tspan fill="#F8FAFC"> numpy </tspan>
-        <tspan fill="#F472B6">as</tspan>
-        <tspan fill="#38BDF8"> np</tspan>
-      </text>
+      <text x="12" y="62" fill="#374151">4</text>
 
-      <!-- Line 3 blank -->
-      <text x="14" y="50" fill="#374151">3</text>
+      <text x="12" y="78" fill="#374151">5</text>
+      <text x="30" y="78" fill="#4b5563"># Load &amp; inspect dataset</text>
 
-      <!-- Line 4 -->
-      <text x="14" y="68" fill="#374151">4</text>
-      <text x="36" y="68">
-        <tspan fill="#F472B6">from</tspan>
-        <tspan fill="#F8FAFC"> novaflix </tspan>
-        <tspan fill="#F472B6">import</tspan>
-        <tspan fill="#A78BFA"> RecommendEngine</tspan>
-      </text>
+      <text x="12" y="94" fill="#374151">6</text>
+      <text x="30" y="94"><tspan fill="#e2e8f0">df </tspan><tspan fill="#86efac">= </tspan><tspan fill="#38bdf8">pd</tspan><tspan fill="#e2e8f0">.</tspan><tspan fill="#60a5fa">read_csv</tspan><tspan fill="#e2e8f0">(</tspan><tspan fill="#a3e635">"sales_data.csv"</tspan><tspan fill="#e2e8f0">)</tspan></text>
 
-      <!-- Line 5 comment -->
-      <text x="14" y="86" fill="#374151">5</text>
-      <text x="36" y="86" fill="#4B5563"># Load &amp; pivot real datasets</text>
+      <text x="12" y="110" fill="#374151">7</text>
+      <text x="30" y="110"><tspan fill="#e2e8f0">df.</tspan><tspan fill="#60a5fa">dropna</tspan><tspan fill="#e2e8f0">(inplace=</tspan><tspan fill="#f472b6">True</tspan><tspan fill="#e2e8f0">)</tspan></text>
 
-      <!-- Line 6 -->
-      <text x="14" y="104" fill="#374151">6</text>
-      <text x="36" y="104">
-        <tspan fill="#F8FAFC">df </tspan>
-        <tspan fill="#A3E635">= </tspan>
-        <tspan fill="#38BDF8">pd</tspan>
-        <tspan fill="#F8FAFC">.</tspan>
-        <tspan fill="#60A5FA">read_sql</tspan>
-        <tspan fill="#F8FAFC">(</tspan>
-        <tspan fill="#A3E635">"SELECT *"</tspan>
-        <tspan fill="#F8FAFC">)</tspan>
-      </text>
+      <text x="12" y="126" fill="#374151">8</text>
 
-      <!-- Line 7 -->
-      <text x="14" y="122" fill="#374151">7</text>
-      <text x="36" y="122">
-        <tspan fill="#F8FAFC">pivot </tspan>
-        <tspan fill="#A3E635">= </tspan>
-        <tspan fill="#38BDF8">df</tspan>
-        <tspan fill="#F8FAFC">.</tspan>
-        <tspan fill="#60A5FA">pivot_table</tspan>
-        <tspan fill="#F8FAFC">(</tspan>
-      </text>
+      <text x="12" y="142" fill="#374151">9</text>
+      <text x="30" y="142" fill="#4b5563"># Pivot table aggregation</text>
 
-      <!-- Line 8 -->
-      <text x="14" y="140" fill="#374151">8</text>
-      <text x="36" y="140">
-        <tspan fill="#F8FAFC">    values</tspan>
-        <tspan fill="#A3E635">=</tspan>
-        <tspan fill="#A3E635">"revenue"</tspan>
-        <tspan fill="#F8FAFC">,</tspan>
-      </text>
+      <text x="12" y="158" fill="#374151">10</text>
+      <text x="30" y="158"><tspan fill="#e2e8f0">pivot </tspan><tspan fill="#86efac">= </tspan><tspan fill="#38bdf8">df</tspan><tspan fill="#e2e8f0">.</tspan><tspan fill="#60a5fa">pivot_table</tspan><tspan fill="#e2e8f0">(</tspan></text>
 
-      <!-- Line 9 -->
-      <text x="14" y="158" fill="#374151">9</text>
-      <text x="36" y="158">
-        <tspan fill="#F8FAFC">    index</tspan>
-        <tspan fill="#A3E635">=</tspan>
-        <tspan fill="#A3E635">"category"</tspan>
-        <tspan fill="#F8FAFC">,</tspan>
-      </text>
+      <text x="12" y="174" fill="#374151">11</text>
+      <text x="30" y="174"><tspan fill="#e2e8f0">    values</tspan><tspan fill="#86efac">=</tspan><tspan fill="#a3e635">"revenue"</tspan><tspan fill="#e2e8f0">,</tspan></text>
 
-      <!-- Line 10 -->
-      <text x="14" y="176" fill="#374151">10</text>
-      <text x="36" y="176">
-        <tspan fill="#F8FAFC">    aggfunc</tspan>
-        <tspan fill="#A3E635">=</tspan>
-        <tspan fill="#A3E635">"sum"</tspan>
-        <tspan fill="#F8FAFC">)</tspan>
-      </text>
+      <text x="12" y="190" fill="#374151">12</text>
+      <text x="30" y="190"><tspan fill="#e2e8f0">    index</tspan><tspan fill="#86efac">=</tspan><tspan fill="#a3e635">"region"</tspan><tspan fill="#e2e8f0">,</tspan></text>
 
-      <!-- Line 11 blank -->
-      <text x="14" y="194" fill="#374151">11</text>
+      <text x="12" y="206" fill="#374151">13</text>
+      <text x="30" y="206"><tspan fill="#e2e8f0">    aggfunc</tspan><tspan fill="#86efac">=</tspan><tspan fill="#a3e635">"sum"</tspan><tspan fill="#e2e8f0">)</tspan></text>
 
-      <!-- Line 12 -->
-      <text x="14" y="212" fill="#374151">12</text>
-      <text x="36" y="212">
-        <tspan fill="#F8FAFC">model </tspan>
-        <tspan fill="#A3E635">= </tspan>
-        <tspan fill="#60A5FA">RecommendEngine</tspan>
-        <tspan fill="#F8FAFC">()</tspan>
-      </text>
+      <text x="12" y="222" fill="#374151">14</text>
 
-      <!-- Line 13 -->
-      <text x="14" y="230" fill="#374151">13</text>
-      <text x="36" y="230">
-        <tspan fill="#F8FAFC">scores </tspan>
-        <tspan fill="#A3E635">= </tspan>
-        <tspan fill="#F8FAFC">model.</tspan>
-        <tspan fill="#60A5FA">fit</tspan>
-        <tspan fill="#F8FAFC">(df)</tspan>
-      </text>
+      <text x="12" y="238" fill="#374151">15</text>
+      <text x="30" y="238" fill="#4b5563"># Visualize KPIs</text>
 
-      <!-- Line 14 blank -->
-      <text x="14" y="248" fill="#374151">14</text>
+      <text x="12" y="254" fill="#374151">16</text>
+      <text x="30" y="254"><tspan fill="#38bdf8">df</tspan><tspan fill="#e2e8f0">[</tspan><tspan fill="#a3e635">"revenue"</tspan><tspan fill="#e2e8f0">].</tspan><tspan fill="#60a5fa">plot</tspan><tspan fill="#e2e8f0">(kind=</tspan><tspan fill="#a3e635">"bar"</tspan><tspan fill="#e2e8f0">)</tspan></text>
 
-      <!-- Line 15 print -->
-      <text x="14" y="266" fill="#374151">15</text>
-      <text x="36" y="266">
-        <tspan fill="#38BDF8">print</tspan>
-        <tspan fill="#F8FAFC">(</tspan>
-        <tspan fill="#A3E635">"✅ Accuracy: 96.4%"</tspan>
-        <tspan fill="#F8FAFC">)</tspan>
-        <tspan fill="#00F0FF" class="cursor-blink">▌</tspan>
-      </text>
+      <text x="12" y="270" fill="#374151">17</text>
+      <text x="30" y="270"><tspan fill="#38bdf8">plt</tspan><tspan fill="#e2e8f0">.</tspan><tspan fill="#60a5fa">title</tspan><tspan fill="#e2e8f0">(</tspan><tspan fill="#a3e635">"Revenue by Region"</tspan><tspan fill="#e2e8f0">)</tspan></text>
+
+      <text x="12" y="286" fill="#374151">18</text>
+      <text x="30" y="286"><tspan fill="#38bdf8">plt</tspan><tspan fill="#e2e8f0">.</tspan><tspan fill="#60a5fa">show</tspan><tspan fill="#e2e8f0">()</tspan><tspan fill="#38bdf8" class="cur"> ▌</tspan></text>
 
     </g>
 
-    <!-- Status bar at bottom of code window -->
-    <g transform="translate(0, 334)">
-      <rect width="296" height="34" rx="14" fill="rgba(30, 41, 59, 0.9)"/>
-      <rect y="0" width="296" height="20" fill="rgba(30, 41, 59, 0.9)"/>
-      <circle cx="16" cy="17" r="4" fill="#10B981"/>
-      <text x="28" y="21" font-family="monospace" font-size="9.5" fill="#94A3B8">Python 3.11  •  pandas 2.1  •  sklearn ✓</text>
+    <!-- Status bar -->
+    <g transform="translate(0,322)">
+      <rect width="284" height="32" rx="12" fill="#161b22"/>
+      <rect y="0" width="284" height="16" fill="#161b22"/>
+      <circle cx="14" cy="16" r="3.5" fill="#22c55e"/>
+      <text x="26" y="20" font-family="'Fira Code',monospace" font-size="9" fill="#6b7280">Python 3.11  ·  pandas 2.1  ·  numpy 1.26</text>
     </g>
   </g>
 
+  <!-- Bottom: ✱ note -->
+  <text x="34" y="392" font-family="system-ui,sans-serif" font-size="9" fill="#475569">✱ HTML/CSS — basic knowledge only</text>
+
 </svg>'''
 
-output_path = r"c:\Users\altaf\Desktop\ialtaf14\assets\hero.svg"
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write(hero_svg_content)
-
-# Also copy to ialtaf14-main
-output_path2 = r"c:\Users\altaf\Desktop\ialtaf14\ialtaf14-main\assets\hero.svg"
-with open(output_path2, "w", encoding="utf-8") as f:
-    f.write(hero_svg_content)
-
-print(f"Done! hero.svg size: {os.path.getsize(output_path)} bytes")
+for path in [
+    r"c:\Users\altaf\Desktop\ialtaf14\assets\hero.svg",
+    r"c:\Users\altaf\Desktop\ialtaf14\ialtaf14-main\assets\hero.svg",
+]:
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"Written {path} — {os.path.getsize(path):,} bytes")
